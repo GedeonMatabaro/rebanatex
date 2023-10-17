@@ -24,9 +24,8 @@ const Select = ({label, value, onChange, options =[]}) => {
                             {optionItem.label}
                         </option>
                     ))
-                ) :(
+                ) :
                     <option id="" value={""}>Select</option>
-                ) 
             }
         </select>
 
