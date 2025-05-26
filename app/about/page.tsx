@@ -51,7 +51,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/AboutUs.jpg"
                     alt="RE-BANATEX story"
                     width={600}
                     height={400}
@@ -196,25 +196,25 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
-                  name: "Sarah Mutoni",
+                  name: "Jonathan Shauri",
                   role: "Founder & CEO",
-                  bio: "With a background in sustainable agriculture and textile design, Sarah founded RE-BANATEX to address agricultural waste while creating beautiful products.",
+                  bio: "With a background in mechanical Eng., Jonathan founded RE-BANATEX to address agricultural waste while creating beautiful products. He designed the first fiber extraction machine of Re-banatex.",
                   image: "/placeholder.svg?height=400&width=400",
                 },
                 {
-                  name: "Jean-Paul Uwimana",
+                  name: "Clement",
                   role: "Head of Production",
                   bio: "Jean-Paul oversees our manufacturing process, ensuring quality and sustainability at every step from raw material to finished product.",
                   image: "/placeholder.svg?height=400&width=400",
                 },
                 {
-                  name: "Marie Ingabire",
+                  name: "Valentin",
                   role: "Design Director",
                   bio: "Marie combines traditional Rwandan patterns with contemporary design to create our unique textile patterns and product designs.",
                   image: "/placeholder.svg?height=400&width=400",
                 },
                 {
-                  name: "David Mugabo",
+                  name: "Fausitne",
                   role: "Sustainability Manager",
                   bio: "David ensures our processes remain environmentally friendly and works with local farmers to source materials sustainably.",
                   image: "/placeholder.svg?height=400&width=400",

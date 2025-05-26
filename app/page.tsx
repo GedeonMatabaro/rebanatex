@@ -36,10 +36,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/process"
+                  href="/about"
                   className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
                 >
-                  Explore Our Process
+                  About Us
                 </Link>
                 <Link
                   href="/products"
@@ -54,30 +54,60 @@ export default function Home() {
 
         {/* Categories Slider */}
         <section className="w-full bg-[#28a745] py-4 overflow-hidden">
-          <div className="flex items-center justify-start gap-8 animate-marquee">
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Recycle className="h-5 w-5" />
-              <span>Banana Farming</span>
+          <div className="flex animate-marquee gap-8">
+            {/* First set of items */}
+            <div className="flex items-center justify-start gap-8 flex-shrink-0">
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Recycle className="h-5 w-5" />
+                <span>Banana Farming</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Leaf className="h-5 w-5" />
+                <span>Sustainable Materials</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Globe className="h-5 w-5" />
+                <span>Eco-Friendly Products</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Recycle className="h-5 w-5" />
+                <span>Zero Waste</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Leaf className="h-5 w-5" />
+                <span>Sustainable Materials</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Globe className="h-5 w-5" />
+                <span>Eco-Friendly Products</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Leaf className="h-5 w-5" />
-              <span>Sustainable Materials</span>
-            </div>
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Globe className="h-5 w-5" />
-              <span>Eco-Friendly Products</span>
-            </div>
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Recycle className="h-5 w-5" />
-              <span>Zero Waste</span>
-            </div>
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Leaf className="h-5 w-5" />
-              <span>Sustainable Materials</span>
-            </div>
-            <div className="flex items-center gap-2 text-white whitespace-nowrap">
-              <Globe className="h-5 w-5" />
-              <span>Eco-Friendly Products</span>
+            {/* Duplicate set of items for seamless looping */}
+            <div className="flex items-center justify-start gap-8 flex-shrink-0">
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Recycle className="h-5 w-5" />
+                <span>Banana Farming</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Leaf className="h-5 w-5" />
+                <span>Sustainable Materials</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Globe className="h-5 w-5" />
+                <span>Eco-Friendly Products</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Recycle className="h-5 w-5" />
+                <span>Zero Waste</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Leaf className="h-5 w-5" />
+                <span>Sustainable Materials</span>
+              </div>
+              <div className="flex items-center gap-2 text-white whitespace-nowrap">
+                <Globe className="h-5 w-5" />
+                <span>Eco-Friendly Products</span>
+              </div>
             </div>
           </div>
         </section>
@@ -162,29 +192,31 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                {
-                  title: "Farming",
-                  description:
-                    "Sustainable banana farming practices that respect the environment and local communities.",
-                  icon: <Leaf className="h-8 w-8 text-white" />,
-                },
-                {
-                  title: "Harvesting",
-                  description: "Careful collection of banana stems after fruit harvest, ensuring zero waste.",
-                  icon: <Recycle className="h-8 w-8 text-white" />,
-                },
-                {
-                  title: "Processing",
-                  description:
-                    "Extracting and treating fibers using eco-friendly methods to prepare for manufacturing.",
-                  icon: <Globe className="h-8 w-8 text-white" />,
-                },
-                {
-                  title: "Manufacturing",
-                  description: "Transforming processed fibers into beautiful textiles, yarns, and finished products.",
-                  icon: <Users className="h-8 w-8 text-white" />,
-                },
-              ].map((step, index) => (
+                  {
+                    title: "Banana Trunk Sourcing",
+                    description:
+                      "We partner with local farmers to source banana trunks sustainably, promoting environmental responsibility and community well-being.",
+                    icon: <Leaf className="h-8 w-8 text-white" />,
+                  },
+                  {
+                    title: "Fiber Extraction",
+                    description:
+                      "Banana stems, typically discarded after fruit harvesting, are collected and processed using our custom-built extraction machine to obtain high-quality fibers, ensuring a zero-waste approach.",
+                    icon: <Recycle className="h-8 w-8 text-white" />,
+                  },
+                  {
+                    title: "Eco-Friendly Processing",
+                    description:
+                      "Natural fibers are treated using environmentally conscious methods to prepare them for production and product development.",
+                    icon: <Globe className="h-8 w-8 text-white" />,
+                  },
+                  {
+                    title: "Product Manufacturing",
+                    description:
+                      "The processed fibers are skillfully transformed into sustainable textiles, yarns, and innovative finished products.",
+                    icon: <Users className="h-8 w-8 text-white" />,
+                  },
+                ].map((step, index) => (
                 <div
                   key={index}
                   className="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow"
@@ -209,14 +241,14 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link
                 href="/process"
                 className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
               >
                 Explore Our Full Process
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -249,55 +281,58 @@ export default function Home() {
                   description: "Eco-friendly alternatives to plastic, perfect for sustainable packaging solutions.",
                   image: "/Biodegradable Products.jpeg",
                 },
+                {
+                  title: "Bags",
+                  description: "Stylish, sustainable bags crafted from banana fiber for everyday use.",
+                  image: "/bag.jpeg", // Make sure this image exists in your public directory
+                },
               ].map((product, index) => (
                 <div
-                  key={index}
-                  className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
-                >
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={product.image || "/placeholder.svg"}
-                      alt={product.title}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-                    <div className="p-6 text-white">
-                      <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                      <p className="text-white/80 mb-4">{product.description}</p>
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
+              >
+                {/* Image with gradient hover */}
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={product.image || "/placeholder.svg"}
+                    alt={product.title}
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+
+                {/* Text block outside the image */}
+                <div className="flex items-end p-6 transition-all duration-300 bg-gradient-to-t from-white via-white/80 to-white/50 group-hover:from-black group-hover:via-black/70 group-hover:to-black/20">
+                    <div>
+                      <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-white">
+                        {product.title}
+                      </h3>
+                      <p className="text-gray-700 group-hover:text-white/80 mb-4">
+                        {product.description}
+                      </p>
                       <Link
                         href={`/products/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="inline-flex items-center text-[#28a745] bg-white px-4 py-2 rounded-md font-medium"
+                        className="inline-flex items-center font-medium px-4 py-2 rounded-md transition-all duration-300 bg-transparent text-[#28a745] group-hover:bg-white group-hover:text-[#28a745]"
                       >
-                        Explore
+                        Learn more
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">{product.title}</h3>
-                    <p className="text-gray-600">{product.description}</p>
-                    <Link
-                      href={`/products/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="inline-flex items-center text-[#28a745] font-medium mt-4"
-                    >
-                      Learn more
-                      <ChevronRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
+              </div>
               ))}
             </div>
-            <div className="text-center mt-12">
+
+            {/* <div className="text-center mt-12">
               <Link
                 href="/products"
                 className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
               >
                 View All Products
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -356,10 +391,9 @@ export default function Home() {
               <div className="relative">
                 <div className="relative rounded-full overflow-hidden border-8 border-white shadow-xl aspect-square">
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
+                    src="/big-image.jpeg"
                     alt="Sustainable practices"
-                    width={600}
-                    height={600}
+                    fill
                     className="object-cover"
                   />
                 </div>
@@ -387,20 +421,26 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[...Array(8)].map((_, index) => (
-                <div
-                  key={index}
-                  className={`overflow-hidden rounded-lg ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
-                >
-                  <Image
-                    src={`/placeholder.svg?height=${index === 0 ? 600 : 300}&width=${index === 0 ? 600 : 300}`}
-                    alt={`Gallery image ${index + 1}`}
-                    width={index === 0 ? 600 : 300}
-                    height={index === 0 ? 600 : 300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
+            {[
+              "JohnPicture.jpeg",
+              "Janek_john.jpg",
+              "Winners_Simcubator.JPG",
+              "Toff.jpg",
+              "Simcubator_night.heic",
+            ].map((img, index) => (
+              <div
+                key={index}
+                className={`overflow-hidden rounded-lg ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+              >
+                <Image
+                  src={`/${img}`}
+                  alt={`Gallery image ${index + 1}`}
+                  width={index === 0 ? 600 : 300}
+                  height={index === 0 ? 600 : 300}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
             </div>
             <div className="text-center mt-12">
               <Link
@@ -414,7 +454,7 @@ export default function Home() {
         </section>
 
         {/* Latest Blog Posts */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        {/* <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12">
               <span className="text-[#28a745] text-sm font-medium uppercase tracking-wider">OUR BLOG</span>
@@ -483,7 +523,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Newsletter */}
         <section className="py-16 md:py-24 bg-[#28a745] text-white">
