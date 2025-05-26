@@ -424,7 +424,7 @@ export default function Home() {
             {[
               "JohnPicture.jpeg",
               "Janek_john.jpg",
-              "Winners_Simcubator.JPG",
+              "Winners_Simcubator.jpg",
               "Toff.jpg",
               "Simcubator_night.heic",
             ].map((img, index) => (
