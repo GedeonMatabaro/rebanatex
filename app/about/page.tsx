@@ -6,6 +6,48 @@ import { PageHeader } from "../../components/page-header"
 import { MainNav } from "@/components/main-nav"
 
 export default function AboutPage() {
+  const socialLinks = [
+    {
+      name: "twitter",
+      link: "https://x.com/rebanatex",
+      icon: (
+        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+      ),
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/company/rebanatex",
+      icon: (
+        <>
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </>
+      ),
+    },
+    {
+      name: "instagram",
+      link: "https://instagram.com/rebanatex",
+      icon: (
+        <>
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </>
+      ),
+    },
+    {
+      name: "mail",
+      link: "mailto:info@rebanatex.rw",
+      icon: (
+        <>
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </>
+      ),
+    },
+  ];
+  
   return (
     <div className="flex flex-col min-h-screen">  
         <MainNav />
@@ -233,7 +275,7 @@ export default function AboutPage() {
                       className="w-full aspect-square object-cover transform group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                      <div className="p-4 w-full flex justify-center space-x-3">
+                      {/* <div className="p-4 w-full flex justify-center space-x-3">
                         {["twitter", "linkedin", "mail"].map((social, idx) => (
                           <a
                             key={idx}
@@ -270,7 +312,34 @@ export default function AboutPage() {
                             </svg>
                           </a>
                         ))}
+                      </div> */}
+                      <div className="p-4 w-full flex justify-center space-x-3">
+                        {socialLinks.map(({ name, link, icon }, idx) => (
+                          <a
+                            key={idx}
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-[#28a745] transition-colors"
+                            aria-label={name}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="white"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              {icon}
+                            </svg>
+                          </a>
+                        ))}
                       </div>
+
                     </div>
                   </div>
                   <div className="p-6">
