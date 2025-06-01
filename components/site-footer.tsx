@@ -32,7 +32,7 @@ export function SiteFooter() {
             </a>
 
             <a
-              href="https://twitter.com"
+              href="https://x.com/rebanatex"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-2 rounded-full hover:bg-[#28a745] transition-colors"
@@ -43,7 +43,7 @@ export function SiteFooter() {
             </a>
 
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/rebanatex"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-2 rounded-full hover:bg-[#28a745] transition-colors"
@@ -58,7 +58,7 @@ export function SiteFooter() {
             </a>
 
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/rebanatex"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-2 rounded-full hover:bg-[#28a745] transition-colors"
