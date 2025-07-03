@@ -22,32 +22,18 @@ export function MainNav() {
     {
       title: "About Us",
       href: "/about",
-      submenu: [
-        { title: "Our Story", href: "/about#our-story" },
-        { title: "Mission & Vision", href: "/about#mission-vision" },
-        { title: "Our Team", href: "/about#our-team" },
-        { title: "Careers", href: "/about#careers" },
-        { title: "Testimonials", href: "/about#testimonials" },
-      ],
     },
     {
       title: "Our Process",
       href: "/process",
-      submenu: [
-        { title: "Phase 1: Farming", href: "/process#phase-1" },
-        { title: "Phase 2: Harvesting", href: "/process#phase-2" },
-        { title: "Phase 3: Processing", href: "/process#phase-3" },
-        { title: "Phase 4: Manufacturing", href: "/process#phase-4" },
-      ],
     },
     {
       title: "Products",
       href: "/products",
       submenu: [
-        { title: "Banana Yarn", href: "/products/banana-yarn" },
+        { title: "Laptop Bag", href: "/products/laptop-bag" },
         { title: "Banana Fabric", href: "/products/banana-fabric" },
-        { title: "Rugs & Mats", href: "/products/rugs-mats" },
-        { title: "Bioplastics", href: "/products/bioplastics" },
+        { title: "Cary Bag", href: "/products/bags" },
         { title: "Custom Orders", href: "/products/custom-orders" },
       ],
     },
@@ -125,20 +111,6 @@ export function MainNav() {
             </div>
           ))}
         </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            href="/get-a-quote"
-            className="hidden md:inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-2 text-sm font-medium text-white hover:bg-emerald-700 transition-colors"
-          >
-            Get A Quote
-          </Link>
-          <button 
-            className="md:hidden text-gray-800" 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -195,15 +167,6 @@ export function MainNav() {
                   )}
                 </div>
               ))}
-              <div className="pt-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-emerald-600 px-6 py-2 text-sm font-medium text-white hover:bg-emerald-700 transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Get A Quote
-                </Link>
-              </div>
             </nav>
           </div>
         </div>

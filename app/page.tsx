@@ -213,7 +213,7 @@ export default function Home() {
                   {
                     title: "Product Manufacturing",
                     description:
-                      "The processed fibers are skillfully transformed into sustainable textiles, yarns, and innovative finished products.",
+                      "We craft our own fabric by manually weaving fibers with care and skill. These textiles are then transformed into finished products by local artists, celebrating sustainable, artisanal production.",
                     icon: <Users className="h-8 w-8 text-white" />,
                   },
                 ].map((step, index) => (
@@ -230,25 +230,11 @@ export default function Home() {
                       Phase {index + 1}: {step.title}
                     </h3>
                     <p className="text-gray-600">{step.description}</p>
-                    <Link
-                      href={`/process#phase-${index + 1}`}
-                      className="inline-flex items-center text-[#28a745] font-medium mt-4 group-hover:underline"
-                    >
-                      Learn more
-                      <ChevronRight className="ml-1 h-4 w-4" />
-                    </Link>
                   </div>
                 </div>
               ))}
             </div>
-            {/* <div className="text-center mt-12">
-              <Link
-                href="/process"
-                className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
-              >
-                Explore Our Full Process
-              </Link>
-            </div> */}
+            
           </div>
         </section>
 
@@ -267,24 +253,24 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Banana Yarn",
-                  description: "Versatile, biodegradable yarn perfect for weaving and textile production.",
-                  image: "/bananayarn.jpeg",
+                  title: "Laptop Bag",
+                  description: "Sustainably designed for everyday life, this eco-friendly laptop bag keeps your tech and documents secure while making a stylish statement.",
+                  image: "/laptop-bag.jpg",
                 },
                 {
-                  title: "Handwoven Mats",
-                  description: "Beautiful, durable mats handcrafted by local artisans using traditional techniques.",
-                  image: "/mat.jpeg",
+                  title: "Carry bag",
+                  description: "A stylish, sustainable bag handcrafted from banana fiber—perfect for everyday errands with eco-friendly flair.",
+                  image: "/Carry-Bag.png", // Make sure this image exists in your public directory
                 },
                 {
-                  title: "Biodegradable Products",
-                  description: "Eco-friendly alternatives to plastic, perfect for sustainable packaging solutions.",
-                  image: "/Biodegradable Products.jpeg",
+                  title: "Biodegradable Fabric",
+                  description: "Sustainably woven fabric made from natural banana fibers, fully biodegradable and perfect for conscious creations.",
+                  image: "/banana-fabric.webp",
                 },
                 {
-                  title: "Bags",
+                  title: "Other Products",
                   description: "Stylish, sustainable bags crafted from banana fiber for everyday use.",
-                  image: "/bag.jpeg", // Make sure this image exists in your public directory
+                  image: "/products_bag.JPG", // Make sure this image exists in your public directory
                 },
               ].map((product, index) => (
                 <div
@@ -304,7 +290,7 @@ export default function Home() {
                 </div>
 
                 {/* Text block outside the image */}
-                <div className="flex items-end p-6 transition-all duration-300 bg-gradient-to-t from-white via-white/80 to-white/50 group-hover:from-black group-hover:via-black/70 group-hover:to-black/20">
+                <div className="flex h-fit items-end p-6 transition-all duration-300 bg-gradient-to-t from-white via-white/80 to-white/50 group-hover:from-black group-hover:via-black/70 group-hover:to-black/20">
                     <div>
                       <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-white">
                         {product.title}
@@ -312,13 +298,6 @@ export default function Home() {
                       <p className="text-gray-700 group-hover:text-white/80 mb-4">
                         {product.description}
                       </p>
-                      <Link
-                        href={`/products/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="inline-flex items-center font-medium px-4 py-2 rounded-md transition-all duration-300 bg-transparent text-[#28a745] group-hover:bg-white group-hover:text-[#28a745]"
-                      >
-                        Learn more
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
                     </div>
                   </div>
               </div>

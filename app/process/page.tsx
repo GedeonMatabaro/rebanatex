@@ -23,7 +23,7 @@ export default function ProcessPage() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center text-[#28a745] mb-4">
-                <span className="text-sm font-medium uppercase tracking-wider">FROM FARM TO FABRIC</span>
+                <span className="text-sm font-medium uppercase tracking-wider">FROM DISCARDED STEMS TO TEXTILE PRODUCTS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Our Sustainable 4-Phase Process</h2>
               <p className="text-gray-700">
@@ -38,10 +38,10 @@ export default function ProcessPage() {
               <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-[#28a745]/20 -translate-y-1/2 z-0"></div>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
                 {[
-                  { number: "01", title: "Farming", icon: "🌱" },
-                  { number: "02", title: "Harvesting", icon: "🌿" },
-                  { number: "03", title: "Processing", icon: "🧵" },
-                  { number: "04", title: "Manufacturing", icon: "🧶" },
+                  { number: "01", title: "Collecting Banana Stems", icon: "🌱" },
+                  { number: "02", title: "Extracing Fibers", icon: "🛞" },
+                  { number: "03", title: "Weaving", icon: "🧵" },
+                  { number: "04", title: "Manufacturing Products", icon: "🪡" },
                 ].map((step, index) => (
                   <div
                     key={index}
@@ -50,7 +50,9 @@ export default function ProcessPage() {
                     data-aos-delay={index * 100}
                   >
                     <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center border-4 border-[#28a745] mb-4 group-hover:scale-110 transition-transform duration-300 relative">
-                      <span className="text-3xl">{step.icon}</span>
+                       <a href={`#phase-${index + 1}`} className="no-underline">
+                          <span className="text-3xl">{step.icon}</span>
+                      </a>
                       <div className="absolute -right-2 -top-2 w-8 h-8 rounded-full bg-[#28a745] flex items-center justify-center text-white font-bold text-sm">
                         {step.number}
                       </div>
@@ -78,22 +80,18 @@ export default function ProcessPage() {
                 <div className="inline-flex items-center text-[#28a745] mb-4">
                   <span className="text-sm font-medium uppercase tracking-wider">PHASE 1</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Sustainable Farming</h2>
-                <div className="space-y-4 text-gray-700">
-                  <p>
-                    Our process begins with sustainable banana farming practices. We work with local farmers who follow
-                    eco-friendly cultivation methods that respect the environment and support biodiversity.
-                  </p>
-                  <p>
-                    Banana plants naturally produce new shoots, making them a highly renewable resource. Each plant
-                    produces fruit only once, after which the stem can be harvested for fiber extraction without harming
-                    future production.
-                  </p>
-                  <p>
-                    We provide training and support to our partner farmers, helping them implement sustainable practices
-                    that improve soil health, conserve water, and reduce the need for chemical inputs.
-                  </p>
-                </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Collecting Banana Stems</h2>
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  Our process begins by partnering with local farmers to collect discarded banana stems, an abundant byproduct that is often burned or thrown away. By purchasing these stems, we offer farmers an additional source of income from material that previously went to waste.
+                </p>
+                <p>
+                  Rwanda alone produces over 2 million tonnes of bananas each year, generating massive amounts of trunk waste. Instead of contributing to air pollution through burning, we help divert these stems toward sustainable uses, reducing harmful emissions and protecting the environment.
+                </p>
+                <p>
+                  Through this approach, we not only support local livelihoods but also play an active role in reducing climate degradation by transforming agricultural waste into valuable, eco-friendly products.
+                </p>
+              </div>
                 <div className="mt-8 space-y-4">
                   <div className="flex items-start gap-4">
                     <div className="bg-[#28a745]/10 rounded-full p-3 mt-1">
@@ -113,13 +111,13 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Renewable Resource</h3>
+                      <h3 className="font-semibold text-lg mb-1">Supporting Farmers</h3>
                       <p className="text-gray-600">
-                        Banana plants are naturally regenerative, with each plant producing multiple shoots that grow
-                        into new plants.
+                        We buy discarded banana stems directly from local farmers, providing them with extra income for material that would otherwise be burned or wasted.
                       </p>
                     </div>
                   </div>
+
                   <div className="flex items-start gap-4">
                     <div className="bg-[#28a745]/10 rounded-full p-3 mt-1">
                       <svg
@@ -137,19 +135,20 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Eco-Friendly Practices</h3>
+                      <h3 className="font-semibold text-lg mb-1">Reducing Waste & Emissions</h3>
                       <p className="text-gray-600">
-                        We promote organic farming methods that avoid harmful chemicals and preserve soil health.
+                        By diverting banana stems from burning or dumping, we help reduce air pollution and environmental degradation, turning agricultural waste into sustainable products.
                       </p>
                     </div>
                   </div>
                 </div>
+
               </div>
               <div className="order-1 md:order-2 relative group">
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/Banana_Trunc.jpg"
                     alt="Sustainable banana farming"
                     width={600}
                     height={400}
@@ -164,7 +163,7 @@ export default function ProcessPage() {
           </div>
         </section>
 
-        {/* Phase 2: Harvesting */}
+
         <section id="phase-2" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -172,8 +171,8 @@ export default function ProcessPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Harvesting banana stems"
+                    src="/Fiber_Extraction.jpg"
+                    alt="Extracting banana fibers"
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -187,19 +186,16 @@ export default function ProcessPage() {
                 <div className="inline-flex items-center text-[#28a745] mb-4">
                   <span className="text-sm font-medium uppercase tracking-wider">PHASE 2</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Careful Harvesting</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Extracting Fibers</h2>
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    After the banana fruit is harvested, the stem is typically considered agricultural waste. This is
-                    where our process begins to create value from what would otherwise be discarded.
+                    Once collected, the banana stems are brought to our facility where the transformation begins. Our team of mechanical engineers designed and built a custom fiber extractor machine specifically for this purpose.
                   </p>
                   <p>
-                    Our trained harvesters carefully cut down the banana stems, ensuring minimal impact on the
-                    surrounding plants and soil. The stems are then transported to our processing facility.
+                    This machine efficiently separates strong, flexible fibers from the trunks that would otherwise go to waste. By innovating locally, we ensure consistent quality and reduce manual labor, making the process both sustainable and scalable.
                   </p>
                   <p>
-                    By utilizing these stems, we're not only creating valuable products but also helping farmers manage
-                    agricultural waste in an environmentally responsible way.
+                    After extraction, the raw fibers are carefully hung in the sun to dry naturally. This gentle, chemical-free drying method preserves the fibers’ strength and color while minimizing environmental impact.
                   </p>
                 </div>
                 <div className="mt-8 space-y-4">
@@ -223,10 +219,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Zero Waste Approach</h3>
+                      <h3 className="font-semibold text-lg mb-1">Locally Engineered Solution</h3>
                       <p className="text-gray-600">
-                        We utilize parts of the banana plant that would otherwise be discarded, creating value from
-                        agricultural byproducts.
+                        Our extractor machine was designed by local mechanical engineers to maximize fiber yield and quality while reducing waste.
                       </p>
                     </div>
                   </div>
@@ -250,10 +245,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Sustainable Timing</h3>
+                      <h3 className="font-semibold text-lg mb-1">Natural Sun Drying</h3>
                       <p className="text-gray-600">
-                        Harvesting occurs after fruit production, ensuring no impact on food production while maximizing
-                        resource utilization.
+                        Extracted fibers are air-dried under the sun, preserving their natural quality without chemicals or energy-intensive processes.
                       </p>
                     </div>
                   </div>
@@ -263,7 +257,8 @@ export default function ProcessPage() {
           </div>
         </section>
 
-        {/* Phase 3: Processing */}
+
+        {/* Phase 3: Weaving */}
         <section id="phase-3" className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -271,20 +266,16 @@ export default function ProcessPage() {
                 <div className="inline-flex items-center text-[#28a745] mb-4">
                   <span className="text-sm font-medium uppercase tracking-wider">PHASE 3</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Eco-Friendly Processing</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Meticulous Weaving</h2>
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    Once at our facility, the banana stems undergo a careful processing method to extract the valuable
-                    fibers. This process is designed to minimize environmental impact while maximizing fiber quality.
+                    Once the fibers are sun-dried, they’re ready for transformation. Our skilled artisans meticulously weave these fibers by hand, creating beautiful, durable fabric through time-honored techniques.
                   </p>
                   <p>
-                    First, the stems are stripped to separate the outer sheaths. These sheaths are then processed
-                    through a mechanical scraper to remove the pulp, revealing the strong, flexible fibers within.
+                    Every piece is crafted with care and heart, preserving traditional weaving knowledge while supporting sustainable livelihoods. Manual weaving ensures minimal environmental impact, avoiding the energy demands of industrial looms.
                   </p>
                   <p>
-                    The extracted fibers are washed using rainwater collection systems and biodegradable cleaning
-                    agents. They are then naturally dried in the sun, reducing energy consumption and preserving fiber
-                    integrity.
+                    This artisanal process celebrates local skill and culture, turning natural banana fibers into high-quality textiles that tell a story of sustainability, community, and craftsmanship.
                   </p>
                 </div>
                 <div className="mt-8 space-y-4">
@@ -306,10 +297,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Water Conservation</h3>
+                      <h3 className="font-semibold text-lg mb-1">Handcrafted Quality</h3>
                       <p className="text-gray-600">
-                        Our processing facility uses rainwater harvesting and water recycling systems to minimize
-                        freshwater usage.
+                        Each fabric is woven manually with precision and care, ensuring unique, high-quality textiles with minimal environmental impact.
                       </p>
                     </div>
                   </div>
@@ -333,9 +323,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Natural Methods</h3>
+                      <h3 className="font-semibold text-lg mb-1">Cultural Craftsmanship</h3>
                       <p className="text-gray-600">
-                        We use sun drying and natural processing methods whenever possible to reduce energy consumption.
+                        Our process celebrates local artistry and tradition, turning natural fibers into fabrics that support communities and honor sustainable practices.
                       </p>
                     </div>
                   </div>
@@ -345,10 +335,10 @@ export default function ProcessPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Processing banana fibers"
-                    width={600}
-                    height={400}
+                    src="/Pweaving.jpg"
+                    alt="Manufacturing banana fiber products"
+                    width={400}
+                    height={600}
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -368,10 +358,10 @@ export default function ProcessPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/products_bag.jpg"
                     alt="Manufacturing banana fiber products"
-                    width={600}
-                    height={400}
+                    width={400}
+                    height={600}
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -383,20 +373,16 @@ export default function ProcessPage() {
                 <div className="inline-flex items-center text-[#28a745] mb-4">
                   <span className="text-sm font-medium uppercase tracking-wider">PHASE 4</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Skilled Manufacturing</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Manufacturing Products</h2>
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    The final phase of our process transforms the processed fibers into beautiful, functional products.
-                    This is where traditional craftsmanship meets modern design.
+                    In the final phase, our woven banana fiber fabric is transformed into finished products. Skilled local artisans cut, stitch, and assemble each piece with care, turning raw fabric into beautiful, durable bags and accessories.
                   </p>
                   <p>
-                    Our skilled artisans spin the fibers into yarn, which can then be woven into fabric or used directly
-                    in various products. We combine traditional weaving techniques with contemporary designs to create
-                    unique, sustainable textiles.
+                    This hands-on manufacturing process supports local jobs and preserves traditional craftsmanship, while offering customers sustainable, high-quality alternatives to conventional products.
                   </p>
                   <p>
-                    Throughout the manufacturing process, we maintain our commitment to sustainability by minimizing
-                    waste, using natural dyes when possible, and ensuring fair working conditions for all our artisans.
+                    Every product reflects our commitment to thoughtful design, sustainability, and community empowerment—proving that fashion can be both beautiful and responsible.
                   </p>
                 </div>
                 <div className="mt-8 space-y-4">
@@ -420,9 +406,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Artisan Craftsmanship</h3>
+                      <h3 className="font-semibold text-lg mb-1">Local Artisan Work</h3>
                       <p className="text-gray-600">
-                        We employ local artisans, preserving traditional skills while creating sustainable livelihoods.
+                        We partner with local artisans to craft bags and accessories, supporting skilled jobs and fair incomes.
                       </p>
                     </div>
                   </div>
@@ -450,10 +436,9 @@ export default function ProcessPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Innovation & Design</h3>
+                      <h3 className="font-semibold text-lg mb-1">Thoughtful Design</h3>
                       <p className="text-gray-600">
-                        We blend traditional techniques with modern design to create products that are both beautiful
-                        and functional.
+                        Our products combine sustainability with modern style, offering durable, practical, and beautiful alternatives to fast fashion.
                       </p>
                     </div>
                   </div>
@@ -462,6 +447,7 @@ export default function ProcessPage() {
             </div>
           </div>
         </section>
+
 
         {/* Final Products Showcase */}
         <section className="py-16 md:py-24 bg-gray-50">
@@ -472,26 +458,25 @@ export default function ProcessPage() {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">From Waste to Wonderful</h2>
               <p className="text-gray-700">
-                The end result of our careful process is a range of beautiful, sustainable products that combine
-                eco-friendly materials with thoughtful design and skilled craftsmanship.
+                The result of our thoughtful process is a range of sustainable, beautifully crafted products that turn agricultural waste into everyday essentials with purpose and style.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Banana Yarn",
-                  description: "Versatile, biodegradable yarn perfect for weaving and textile production.",
-                  image: "/placeholder.svg?height=400&width=600",
+                  title: "Office & Laptop Bags",
+                  description: "Elegant, durable, and biodegradable bags designed for carrying laptops, documents, and everyday work essentials with style and sustainability.",
+                  image: "/laptop-bag.jpg",
                 },
                 {
-                  title: "Woven Fabrics",
-                  description: "Beautiful textiles with natural texture and durability for fashion and home decor.",
-                  image: "/placeholder.svg?height=400&width=600",
+                  title: "Carry Bags & Accessories",
+                  description: "Stylish, eco-friendly carry bags and versatile accessories handcrafted from banana fiber for conscious everyday use.",
+                  image: "/bag.jpeg",
                 },
                 {
-                  title: "Handcrafted Products",
-                  description: "Unique items that showcase the natural beauty of banana fiber materials.",
-                  image: "/placeholder.svg?height=400&width=600",
+                  title: "Banana Fiber Fabric",
+                  description: "Naturally textured, durable fabric made from banana fibers—perfect for custom fashion, home decor, and other sustainable designs.",
+                  image: "/banana-fabric.webp",
                 },
               ].map((product, index) => (
                 <div
@@ -542,6 +527,7 @@ export default function ProcessPage() {
             </div>
           </div>
         </section>
+
       </main>
 
       {/* Footer */}

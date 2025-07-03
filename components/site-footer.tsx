@@ -109,8 +109,8 @@ export function SiteFooter() {
             <h3 className="font-bold text-lg mb-4">Products</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/products/banana-yarn" className="text-gray-400 hover:text-[#28a745] transition-colors">
-                  Banana Yarn
+                <Link href="/products/laptop_bags" className="text-gray-400 hover:text-[#28a745] transition-colors">
+                  Laptop Yarn
                 </Link>
               </li>
               <li>
@@ -119,13 +119,8 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/products/rugs-mats" className="text-gray-400 hover:text-[#28a745] transition-colors">
-                  Rugs & Mats
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/bioplastics" className="text-gray-400 hover:text-[#28a745] transition-colors">
-                  Bioplastics
+                <Link href="/products/bags" className="text-gray-400 hover:text-[#28a745] transition-colors">
+                  Bags
                 </Link>
               </li>
               <li>
