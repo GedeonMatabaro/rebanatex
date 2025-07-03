@@ -38,8 +38,8 @@ export function MainNav() {
       ],
     },
     { title: "Sustainability", href: "/sustainability" },
-    { title: "Gallery", href: "/gallery" },
-    { title: "Blog", href: "/blog" },
+    // { title: "Gallery", href: "/gallery" },
+    // { title: "Blog", href: "/blog" },
     { title: "Contact", href: "/contact" },
   ]
 

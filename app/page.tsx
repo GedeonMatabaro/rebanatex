@@ -421,14 +421,14 @@ export default function Home() {
               </div>
             ))}
             </div>
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link
                 href="/gallery"
                 className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
               >
                 View Full Gallery
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 

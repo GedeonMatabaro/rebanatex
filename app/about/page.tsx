@@ -4,6 +4,7 @@ import { Leaf, Users, Star, Briefcase, Quote, ChevronRight } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { PageHeader } from "../../components/page-header"
 import { MainNav } from "@/components/main-nav"
+import CareersSection from "@/components/CareerSection"
 
 export default function AboutPage() {
   const socialLinks = [
@@ -363,112 +364,10 @@ export default function AboutPage() {
         </section>
 
         {/* Careers Section */}
-        <section id="careers" className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="inline-flex items-center text-[#28a745] mb-4">
-                  <span className="text-sm font-medium uppercase tracking-wider">CAREERS</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Grow With Us</h2>
-                <p className="text-gray-700 mb-8">
-                  Join our team of passionate individuals dedicated to sustainable innovation and positive impact. We
-                  offer a collaborative environment where creativity and sustainability go hand in hand.
-                </p>
-                <div className="space-y-6">
-                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Production Specialist</h3>
-                    <p className="text-[#28a745] font-medium mb-3">Full-time • Kigali, Rwanda</p>
-                    <p className="text-gray-600 mb-4">
-                      Oversee the production of banana fiber textiles, ensuring quality and efficiency while maintaining
-                      sustainable practices.
-                    </p>
-                    <Link
-                      href="/careers/production-specialist"
-                      className="inline-flex items-center text-[#28a745] font-medium hover:underline"
-                    >
-                      Learn more
-                      <ChevronRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Sustainability Coordinator</h3>
-                    <p className="text-[#28a745] font-medium mb-3">Full-time • Kigali, Rwanda</p>
-                    <p className="text-gray-600 mb-4">
-                      Develop and implement sustainability initiatives across our operations, from sourcing to
-                      production and distribution.
-                    </p>
-                    <Link
-                      href="/careers/sustainability-coordinator"
-                      className="inline-flex items-center text-[#28a745] font-medium hover:underline"
-                    >
-                      Learn more
-                      <ChevronRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="mt-8">
-                  <Link
-                    href="/careers"
-                    className="inline-flex items-center justify-center rounded-md bg-[#28a745] px-6 py-3 font-medium text-white hover:bg-[#218838] transition-colors"
-                  >
-                    View All Opportunities
-                  </Link>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4">
-                    <div className="overflow-hidden rounded-lg shadow-md">
-                      <Image
-                        src="/placeholder.svg?height=300&width=300"
-                        alt="Team member working"
-                        width={300}
-                        height={300}
-                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="overflow-hidden rounded-lg shadow-md">
-                      <Image
-                        src="/placeholder.svg?height=300&width=300"
-                        alt="Team collaboration"
-                        width={300}
-                        height={300}
-                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-4 mt-8">
-                    <div className="overflow-hidden rounded-lg shadow-md">
-                      <Image
-                        src="/placeholder.svg?height=300&width=300"
-                        alt="Office environment"
-                        width={300}
-                        height={300}
-                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="overflow-hidden rounded-lg shadow-md">
-                      <Image
-                        src="/placeholder.svg?height=300&width=300"
-                        alt="Team meeting"
-                        width={300}
-                        height={300}
-                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-[#28a745] rounded-full p-4 shadow-lg">
-                  <Users className="h-8 w-8 text-white" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CareersSection />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-16 md:py-24 bg-white">
+        {/* <section id="testimonials" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center text-[#28a745] mb-4">
@@ -543,7 +442,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}
