@@ -13,53 +13,46 @@ export default function ProductsPage() {
   // Mock product categories for filtering
   const categories = [
     { name: "All Products", slug: "all", active: true },
-    { name: "Banana Yarn", slug: "banana-yarn", active: false },
+    { name: "Laptop Bag", slug: "laptop-bag", active: false },
     { name: "Banana Fabric", slug: "banana-fabric", active: false },
-    { name: "Rugs & Mats", slug: "rugs-mats", active: false },
-    { name: "Bioplastics", slug: "bioplastics", active: false },
+    { name: "Carry Bags", slug: "bags", active: false },
+    { name: "Custom Order", slug: "custom-orders", active: false },
   ]
 
   // Mock product data
   const allProducts = [
     {
-      title: "Banana Yarn",
-      description: "Our premium banana fiber yarn is versatile, biodegradable, and perfect for weaving, knitting, and textile production. Available in natural color and various thicknesses.",
-      image: "/placeholder.svg?height=600&width=800",
-      link: "/products/banana-yarn",
-      category: "banana-yarn"
+      title: "Laptop Bags",
+      description: "Sustainably designed for everyday life, this eco-friendly laptop bag keeps your tech and documents secure while making a stylish statement.",
+      image: "/laptop-bag.jpg",
+      link: "/products/laptop-bag",
+      category: "laptop-bag"
     },
     {
-      title: "Banana Fabric",
-      description: "Handwoven textiles made from our banana fiber yarn. These fabrics combine durability with a unique texture and natural aesthetic, perfect for fashion and home decor.",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Carry bag",
+      description: "A stylish, sustainable bag handcrafted from banana fiber—perfect for everyday errands with eco-friendly flair.",
+      image: "/Carry-Bag.png",
+      link: "/products/bags",
+      category: "bags"
+    },
+    {
+      title: "Biodegradable Fabric",
+      description: "Sustainably woven fabric made from natural banana fibers, fully biodegradable and perfect for conscious creations.",
+      image: "/Natural-Fabric.jpg",
       link: "/products/banana-fabric",
       category: "banana-fabric"
     },
     {
-      title: "Rugs & Mats",
-      description: "Beautiful, durable floor coverings handcrafted by local artisans using traditional techniques. Each piece showcases the natural beauty of banana fiber.",
-      image: "/placeholder.svg?height=600&width=800",
-      link: "/products/rugs-mats",
-      category: "rugs-mats"
-    },
-    {
-      title: "Bioplastics",
-      description: "Innovative, biodegradable alternatives to conventional plastics. Our banana fiber-based packaging solutions offer sustainable options for eco-conscious businesses.",
-      image: "/placeholder.svg?height=600&width=800",
-      link: "/products/bioplastics",
-      category: "bioplastics"
-    },
-    {
-      title: "Sustainable Packaging",
+      title: "Other Products",
       description: "Eco-friendly packaging solutions made from banana fiber. These products provide sustainable alternatives to plastic and paper packaging for various industries.",
-      image: "/placeholder.svg?height=600&width=800",
-      link: "/products/sustainable-packaging",
-      category: "banana-fabric"
+      image: "/products_bag.jpg",
+      link: "/products/bags",
+      category: "bags"
     },
     {
       title: "Custom Orders",
       description: "Tailored solutions for businesses seeking sustainable materials. We work closely with partners to develop custom products that meet specific requirements.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/Custom-orders.jpg",
       link: "/products/custom-orders",
       category: "custom"
     },
@@ -68,31 +61,31 @@ export default function ProductsPage() {
   // Featured products data
   const featuredProducts = [
     {
-      title: "Natural Banana Fiber Yarn",
-      category: "Banana Yarn",
-      price: "$12.99",
-      image: "/placeholder.svg?height=400&width=400",
-      link: "/products/banana-yarn/natural-yarn",
+      title: "Laptop Bag",
+      category: "Office Bags",
+      price: "RWF 15,000",
+      image: "/laptop-bag.jpg",
+      link: "/products/laptop-bag",
     },
     {
-      title: "Handwoven Table Runner",
+      title: "Handwoven Fabric",
       category: "Banana Fabric",
-      price: "$34.99",
-      image: "/placeholder.svg?height=400&width=400",
-      link: "/products/banana-fabric/table-runner",
+      price: "RWF 7,000 / 1m X 50cm",
+      image: "/Natural-Fabric.jpg",
+      link: "/products/banana-fabric",
     },
     {
-      title: "Banana Fiber Floor Mat",
-      category: "Rugs & Mats",
-      price: "$49.99",
-      image: "/placeholder.svg?height=400&width=400",
-      link: "/products/rugs-mats/floor-mat",
+      title: "Other Bags",
+      category: "Other Products",
+      price: "RWF 8000",
+      image: "products_bag.jpg",
+      link: "/products/bags",
     },
     {
-      title: "Biodegradable Gift Boxes",
-      category: "Sustainable Packaging",
-      price: "$18.99",
-      image: "/placeholder.svg?height=400&width=400",
+      title: "Custom Order",
+      category: "Custom Order",
+      price: "from RWF 15,000",
+      image: "/Custom-orders.jpg",
       link: "/products/sustainable-packaging/gift-boxes",
     },
   ]
@@ -393,7 +386,7 @@ export default function ProductsPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/Natural-Fabric.jpg"
                     alt="B2B Solutions"
                     width={600}
                     height={400}
@@ -405,7 +398,7 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Testimonials
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -492,7 +485,7 @@ export default function ProductsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-[#28a745] text-white">
+        {/* <section className="py-16 md:py-24 bg-[#28a745] text-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -532,7 +525,7 @@ export default function ProductsPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section>  */}
       </main>
 
       {/* Footer */}

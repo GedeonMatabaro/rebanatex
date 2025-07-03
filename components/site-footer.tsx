@@ -110,7 +110,7 @@ export function SiteFooter() {
             <ul className="space-y-3">
               <li>
                 <Link href="/products/laptop_bags" className="text-gray-400 hover:text-[#28a745] transition-colors">
-                  Laptop Yarn
+                  Laptop Bags
                 </Link>
               </li>
               <li>
