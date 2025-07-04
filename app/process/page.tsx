@@ -467,16 +467,19 @@ export default function ProcessPage() {
                   title: "Office & Laptop Bags",
                   description: "Elegant, durable, and biodegradable bags designed for carrying laptops, documents, and everyday work essentials with style and sustainability.",
                   image: "/laptop-bag.jpg",
+                  link: "/products/laptop-bag",
                 },
                 {
                   title: "Carry Bags & Accessories",
                   description: "Stylish, eco-friendly carry bags and versatile accessories handcrafted from banana fiber for conscious everyday use.",
                   image: "/bag.jpeg",
+                  link: "/products/bags",
                 },
                 {
                   title: "Banana Fiber Fabric",
                   description: "Naturally textured, durable fabric made from banana fibers—perfect for custom fashion, home decor, and other sustainable designs.",
                   image: "/banana-fabric.webp",
+                  link:"/products/banana-fabric",
                 },
               ].map((product, index) => (
                 <div
@@ -494,7 +497,7 @@ export default function ProcessPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                       <div className="p-6 w-full">
                         <Link
-                          href={`/products/${product.title.toLowerCase().replace(/\s+/g, "-")}`}
+                          href={product.link }
                           className="inline-flex items-center bg-white text-[#28a745] px-4 py-2 rounded-md font-medium"
                         >
                           Explore Products
