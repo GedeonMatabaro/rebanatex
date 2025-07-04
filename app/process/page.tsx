@@ -358,7 +358,7 @@ export default function ProcessPage() {
                 <div className="absolute -inset-4 bg-[#28a745]/20 rounded-xl -z-10 transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
                   <Image
-                    src="/products_bag.jpg"
+                    src="/products_bag.JPG"
                     alt="Manufacturing banana fiber products"
                     width={400}
                     height={600}
