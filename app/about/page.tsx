@@ -242,26 +242,21 @@ export default function AboutPage() {
                   name: "Jonathan Shauri",
                   role: "Founder & CEO",
                   bio: "With a background in mechanical Eng., Jonathan founded RE-BANATEX to address agricultural waste while creating beautiful products. He designed the first fiber extraction machine of Re-banatex.",
-                  image: "/placeholder.svg?height=400&width=400",
+                  image: "/Jonathan_img.JPG",
                 },
                 {
                   name: "Clement",
                   role: "Head of Production",
-                  bio: "Jean-Paul oversees our manufacturing process, ensuring quality and sustainability at every step from raw material to finished product.",
-                  image: "/placeholder.svg?height=400&width=400",
+                  bio: "Clement oversees our manufacturing process, ensuring quality and sustainability at every step from raw material to finished product.",
+                  image: "/placeholder-image-person-jpg.webp",
                 },
                 {
-                  name: "Valentin",
+                  name: "Prosper",
                   role: "Design Director",
-                  bio: "Marie combines traditional Rwandan patterns with contemporary design to create our unique textile patterns and product designs.",
-                  image: "/placeholder.svg?height=400&width=400",
+                  bio: "Prosper combines traditional Rwandan patterns with contemporary design to create our unique textile patterns and product designs.",
+                  image: "/placeholder-image-person-jpg.webp",
                 },
-                {
-                  name: "Fausitne",
-                  role: "Sustainability Manager",
-                  bio: "David ensures our processes remain environmentally friendly and works with local farmers to source materials sustainably.",
-                  image: "/placeholder.svg?height=400&width=400",
-                },
+                
               ].map((member, index) => (
                 <div
                   key={index}
@@ -269,7 +264,7 @@ export default function AboutPage() {
                 >
                   <div className="relative overflow-hidden">
                     <Image
-                      src={member.image || "/placeholder.svg"}
+                      src={member.image || "/placeholder-image-person-jpg.webp"}
                       alt={member.name}
                       width={400}
                       height={400}
