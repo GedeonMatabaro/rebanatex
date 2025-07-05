@@ -248,13 +248,13 @@ export default function AboutPage() {
                   name: "Clement",
                   role: "Head of Production",
                   bio: "Clement oversees our manufacturing process, ensuring quality and sustainability at every step from raw material to finished product.",
-                  image: "/placeholder-image-person-jpg.webp",
+                  image: "/Clement22.png",
                 },
                 {
                   name: "Prosper",
                   role: "Design Director",
                   bio: "Prosper combines traditional Rwandan patterns with contemporary design to create our unique textile patterns and product designs.",
-                  image: "/placeholder-image-person-jpg.webp",
+                  image: "/Prosper22.png",
                 },
                 
               ].map((member, index) => (
